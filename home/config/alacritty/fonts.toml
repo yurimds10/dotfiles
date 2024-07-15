@@ -11,13 +11,13 @@ builtin_box_drawing = true
 
 ## Normal font family.
 [font.normal]
-family = "FiraMono Nerd Font"
-style = "Bold"
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
 
 ## If the family is not specified, it will fall back to the value specified for the normal font.
 [font.italic]
 family = "FiraMono Nerd Font"
-style = "Bold Italic"
+style = "Medium Italic"
 
 ## Offset is the extra space around each character.
 ## 'y' can be thought of as modifying the line spacing, and 'x' as modifying the letter spacing.
