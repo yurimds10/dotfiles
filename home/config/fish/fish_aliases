@@ -14,12 +14,6 @@ alias tpr="trash-restore"
 alias cat='bat'
 alias grep='grep --color=always'
 
-alias xi="sudo xbps-install"
-alias xq="sudo xbps-query"
-alias xu="sudo xbps-install -Su"
-alias xr="sudo xbps-remove"
-alias xro="sudo xbps-remove -o"
-
 alias gcl="git clone"
 alias gs="git status"
 alias gadd="git add"
