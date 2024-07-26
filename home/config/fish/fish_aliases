@@ -7,12 +7,15 @@ alias mv="mv -iv"
 alias rm="rm -vI"
 alias bc="bc -ql"
 alias mkd="mkdir -pv"
-alias ls="exa --icons --group-directories-first"
+alias ls="eza --icons --group-directories-first"
 alias locate="plocate"
 alias tp="trash-put"
 alias tpr="trash-restore"
 alias cat='bat'
 alias grep='grep --color=always'
+
+alias fetch="fastfetch"
+alias dotfiles="nvim $HOME/dotfiles/"
 
 alias gcl="git clone"
 alias gs="git status"

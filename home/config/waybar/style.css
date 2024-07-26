@@ -44,6 +44,7 @@
   font-weight: bold;
   font-size: 13px;
   border-radius: 1rem;
+  border: 2px solid #ebdbb2;
 }
 
 /* Each module */
@@ -132,6 +133,7 @@
 
 #network.disconnected {
   /* No styles */
+  color: #fabd2f;
 }
 
 #pulseaudio {
@@ -180,9 +182,9 @@
 #workspaces button.active {
   margin: 6px 5px;
   padding: 0px 16px;
-  background-color: #a9b665;
+  background-color: #d3869b;
 }
 
 #workspaces button:hover {
-  background-color: #a9b665;
+  background-color: #d3869b;
 }
