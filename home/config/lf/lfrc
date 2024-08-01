@@ -1,7 +1,5 @@
-set previewer ctpv
-set cleaner ctpvclear
-&ctpv -s $id
-&ctpvquit $id
+set previewer ~/.config/lf/previewer
+set cleaner ~/.config/lf/cleaner
 
 # Basic Settings
 set reverse true
