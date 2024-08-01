@@ -4,3 +4,5 @@ end
 
 source ~/.config/fish/fish_aliases
 starship init fish | source
+
+fish_add_path /home/yurimds/.spicetify
