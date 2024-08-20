@@ -1,10 +1,6 @@
 configuration {
-  modi:                        "drun,run,window,filebrowser";
+  modi:                        "drun";
   show-icons:                  true;
-  display-drun:                "💻 APPS";
-  display-run:                 "🎩 RUN";
-  display-filebrowser:         "🗃️ FILES";
-  display-window:              "🪟 WINDOWS";
   drun-display-format:         "{name}";
   window-format:               "{w} · {c} · {t}";
 }
@@ -44,7 +40,7 @@ window {
   location:                    center;
   anchor:                      center;
   fullscreen:                  false;
-  width:                       800px;
+  width:                       500px;
   x-offset:                    0px;
   y-offset:                    0px;
   enabled:                     true;
@@ -230,7 +226,7 @@ element-text {
 
 /*****----- Mode Switcher -----*****/
 mode-switcher{
-  enabled:                     true;
+  enabled:                     false;
   expand:                      false;
   spacing:                     0px;
   margin:                      0px;

@@ -182,9 +182,9 @@
 #workspaces button.active {
   margin: 6px 5px;
   padding: 0px 16px;
-  background-color: #d3869b;
+  background-color: #a9b665;
 }
 
 #workspaces button:hover {
-  background-color: #d3869b;
+  background-color: #a9b665;
 }

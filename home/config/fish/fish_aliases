@@ -14,8 +14,10 @@ alias tpr="trash-restore"
 alias cat='bat'
 alias grep='grep --color=always'
 
-alias fetch="fastfetch"
+alias fetch="fastfetch -l small"
+alias vim="nvim"
 alias dotfiles="nvim $HOME/dotfiles/"
+alias neovim="nvim $HOME/Developer/neovim"
 
 alias gcl="git clone"
 alias gs="git status"
