@@ -12,28 +12,34 @@
   "height": 26,
 
   "modules-left": [
+    "custom/launcher",
     "hyprland/workspaces",
-    "hyprland/mode"
   ],
-  "modules-center": [
-    "hyprland/window"
-  ],
+  "modules-center": [],
   "modules-right": [
-    "pulseaudio",
+    "custom/media",
+    "wireplumber",
+    "disk",
     "network",
     "memory",
     "cpu",
     "temperature",
-    "custom/keyboard-layout",
     "tray",
     "clock#date",
-    "clock#time"
+    "clock#time",
+    "custom/power"
   ],
 
 
   // -------------------------------------------------------------------------
   // Modules
   // -------------------------------------------------------------------------
+  
+  "disk": {
+    "interval": 30,
+    "format": "  {free}",
+    "path": "/"
+  },
 
   "clock#time": {
     "interval": 1,
@@ -66,9 +72,34 @@
     "tooltip": false
   },
 
+  "custom/launcher":{
+    "format": " ",
+    "on-click": "rofi -show drun",
+    "on-click-right": "killall rofi"
+  },
+
+  "custom/media": {
+    "interval": 30,
+    "format": "{icon} {}",
+    "return-type": "json",
+    "max-length": 20,
+    "format-icons": {
+      "spotify": " ",
+      "default": " "
+    },
+    "escape": true,
+    "exec": "$HOME/.config/system_scripts/mediaplayer.py 2> /dev/null",
+    "on-click": "playerctl play-pause"
+  },
+
+  "custom/power":{
+    "format": " ",
+    "on-click": "wlogout",
+  },
+
   "memory": {
     "interval": 5,
-    "format": "  {used}GB", // Icon: memory
+    "format": "  {used}GB", // Icon: memory
     "states": {
       "warning": 70,
       "critical": 90
@@ -82,11 +113,6 @@
     "format-linked": "󱘖  {ifname} (No IP)",
     "format-disconnected": "  Disconnected",
     "tooltip-format": "{ifname}: {ipaddr}"
-  },
-
-  "hyprland/mode": {
-    "format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
-    "tooltip": false
   },
 
   "hyprland/window": {
@@ -109,21 +135,11 @@
       "HDMI-A-1": [1, 2, 3, 4 ,5]
     }
   },
-  "pulseaudio": {
-    //"scroll-step": 1,
-    "format": "{icon}  {volume}%",
-    "format-bluetooth": "{icon}  {volume}%",
+  "wireplumber": {
+    "format": "{icon}   {volume}%",
     "format-muted": "󰖁",
-    "format-icons": {
-      "car": " ",
-      "default": ["", "", ""],
-      "hands-free": " ",
-      "headphone": " ",
-      "headset": " ",
-      "phone": " ",
-      "portable": " ",
-    },
     "on-click": "pavucontrol -t 3",
+    "format-icons": ["", "", ""]
   },
 
   "temperature": {

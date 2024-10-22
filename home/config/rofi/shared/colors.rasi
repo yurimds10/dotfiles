@@ -2,7 +2,7 @@
   background:     #1d2021FF;
   background-alt: #1d2021FF;
   foreground:     #EBDBB2FF;
-  selected:       #548056FF;
+  selected:       #A9B665FF;
   active:         #689D6AFF;
   urgent:         #FB4934FF;
 }

@@ -48,14 +48,17 @@
 }
 
 /* Each module */
+#custom-keyboard-layout,
+#custom-launcher,
+#custom-power,
+#disk,
 #battery,
 #clock,
 #cpu,
-#custom-keyboard-layout,
 #memory,
 #mode,
 #network,
-#pulseaudio,
+#wireplumber,
 #temperature,
 #tray {
   padding-left: 10px;
@@ -65,37 +68,27 @@
 /* -----------------------------------------------------------------------------
  * Module styles
  * -------------------------------------------------------------------------- */
-
-#battery {
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+#custom-launcher,
+#custom-power {
+  font-size: 18px;
+  transition: .3s;
 }
 
-#battery.warning {
-  color: #fabd2f;
+#custom-launcher {
+  color: #689d6a;
 }
 
-#battery.critical {
+#custom-launcher:hover {
+  color: #83a598;
+}
+
+#custom-power {
+  font-weight: 900;
   color: #fb4934;
 }
 
-#battery.warning.discharging {
-  animation-name: blink-warning;
-  animation-duration: 3s;
-}
-
-#battery.critical.discharging {
-  animation-name: blink-critical;
-  animation-duration: 2s;
-}
-
-#clock {
-  /* No styles */
-}
-
-#cpu {
-  /* No styles */
+#custom-power:hover {
+  color: #83a598;
 }
 
 #cpu.warning {
@@ -120,36 +113,16 @@
   color: #fb4934;
 }
 
-#mode {
-  background: #64727d;
-  border-top: 2px solid white;
-  /* To compensate for the top border and still have vertical centering */
-  padding-bottom: 2px;
-}
-
-#network {
-  /* No styles */
-}
-
 #network.disconnected {
-  /* No styles */
   color: #fabd2f;
 }
 
-#pulseaudio {
-  /* No styles */
-}
-
 #pulseaudio.muted {
-  /* No styles */
+  color: #fb4934;
 }
 
 #custom-spotify {
   color: rgb(102, 220, 105);
-}
-
-#temperature {
-  /* No styles */
 }
 
 #temperature.critical {
@@ -158,10 +131,7 @@
 
 #tray {
   /* No styles */
-}
-
-#window {
-  /* No styles */
+  color: #ebdbb2;
 }
 
 #workspaces {
@@ -174,7 +144,7 @@
 #workspaces button {
   padding: 0px 0px;
   margin: 6px 5px;
-  border-radius: 15px;
+  border-radius: 10px;
   background: #ebdbb2;
   transition: all 0.5s cubic-bezier(0.11, 1.09, 0.6, 0.96);
 }

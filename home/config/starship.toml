@@ -3,30 +3,33 @@
 format = """
 [](color_aqua)\
 $os\
+[](fg:color_aqua bg:color_aqua_bright)\
 $username\
-[](bg:color_fg1 fg:color_aqua)\
+[](fg:color_aqua_bright bg:color_fg1)\
 $directory\
-[](fg:color_fg1 bg:color_accent)\
-$git_branch\
-$git_status\
-[](fg:color_accent bg:color_blue)\
-$c\
-$rust\
-$golang\
-$nodejs\
-$php\
-$java\
-$kotlin\
-$haskell\
-$python\
-[](fg:color_blue bg:color_bg3)\
-$docker_context\
-$conda\
-[](fg:color_bg3 bg:color_bg1)\
-$time\
-[ ](fg:color_bg1)\
-$line_break$character"""
+[](fg:color_fg1)\
+$line_break\
+"""
 
+#right_format = """
+#$git_branch\
+#$git_status\
+#[](fg:color_accent)\
+#$c\
+#$rust\
+#$golang\
+#$nodejs\
+#$php\
+#$java\
+#$kotlin\
+#$haskell\
+#$python\
+#[](fg:color_blue bg:color_accent)\
+#$docker_context\
+#$conda\
+#[](bg:color_blue fg:color_bg3)\
+#$time\
+#"""
 
 palette = 'gruvbox_dark'
 
@@ -62,10 +65,10 @@ color_accent         = "#a9b665"
 [os]
 disabled = false
 style = "bg:color_aqua fg:color_fg1"
-#format = '[ $os ]($style)'
+#format = "[($symbol)($name)]($style)"
 
 [os.symbols]
-Void = ""
+Void = " "
 Windows = "󰍲"
 Ubuntu = "󰕈"
 SUSE = ""
@@ -89,8 +92,8 @@ RedHatEnterprise = "󱄛"
 
 [username]
 show_always = true
-style_user = "bg:color_aqua fg:color_fg1"
-style_root = "bg:color_aqua fg:color_fg1"
+style_user = "bg:color_aqua_bright fg:color_fg1"
+style_root = "bg:color_aqua_bright fg:color_fg1"
 format = "[ $user ]($style)"
 
 [directory]
@@ -163,11 +166,11 @@ format = '[[ $symbol( $version) ](fg:color_fg0 bg:color_blue)]($style)'
 [docker_context]
 symbol = ""
 style = "bg:color_bg3"
-format = '[[ $symbol( $context) ](fg:#83a598 bg:color_bg3)]($style)'
+format = '[[ $symbol( $context) ](fg:color_blue_bright bg:color_bg3)]($style)'
 
 [conda]
 style = "bg:color_bg3"
-format = '[[ $symbol( $environment) ](fg:#83a598 bg:color_bg3)]($style)'
+format = '[[ $symbol( $environment) ](fg:color_blue_bright bg:color_bg3)]($style)'
 
 [time]
 disabled = false
