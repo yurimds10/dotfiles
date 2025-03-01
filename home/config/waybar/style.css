@@ -1,0 +1,290 @@
+* {
+  /* `otf-font-awesome` is required to be installed for icons */
+  padding: 0;
+  border-radius: 0;
+  min-height: 0;
+  margin: 0;
+  border: none;
+  text-shadow: none;
+  transition: none;
+  box-shadow: none;
+}
+
+/* the whole window */
+window#waybar {
+  background: #292828;
+  color: #ebdbb2;
+  padding: 0px 5px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.modules-left {
+  padding-left: 5px;
+}
+
+.modules-right {
+  padding-right: 5px;
+}
+
+#custom-rofi {
+  color: #292828;
+  border: 2px solid #d3869b;
+  background-color: #d3869b;
+  border-radius: 10px;
+  padding: 0 6px;
+  margin: 5px 0px 5px 0px;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  padding: 0 4px;
+  margin: 5px 3px;
+  font-weight: 800;
+}
+
+/* ================================ */
+/*       workspaces module          */
+/* ================================ */
+#workspaces {
+  margin: 0px;
+  margin: 5px 0px;
+  border: 2px solid #ebdbb2;
+  border-radius: 10px;
+}
+
+#workspaces button {
+  color: #ebdbb2;
+  padding: 0 2px;
+  margin: 5px 3px;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#workspaces button:hover {
+  color: #d3869b;
+}
+
+#workspaces button.visible {
+  color: #292828;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#workspaces button.visible:hover {
+  color: #292828;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#workspaces button.active {
+  color: #a5a64e;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#workspaces button.active:hover {
+  color: #d3869b;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+#workspaces button.urgent {
+  color: #ea6962;
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* ================================ */
+/*            window                */
+/* ================================ */
+#window {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #a9b665;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #a9b665;
+  border-radius: 10px;
+}
+
+/* ================================ */
+/*            tray                  */
+/* ================================ */
+#tray {
+  margin: 5px 0px;
+  padding: 0 6px;
+  border: 2px solid #ebdbb2;
+  border-radius: 10px;
+}
+
+/* ================================ */
+/*            disk                  */
+/* ================================ */
+#disk {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #d8a657;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #d8a657;
+  border-radius: 10px;
+}
+
+/* ================================ */
+/*            cpu                  */
+/* ================================ */
+#cpu {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #a9b665;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #a9b665;
+  border-radius: 10px;
+}
+
+/* ================================ */
+/*             network              */
+/* ================================ */
+#network {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #7daea3;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #7daea3;
+  border-radius: 10px;
+}
+
+/* ================================ */
+/*            temp                  */
+/* ================================ */
+#temperature {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #d8a657;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #d8a657;
+  border-radius: 3px;
+}
+
+#temperature.critical {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #cc241d;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #cc241d;
+  border-radius: 3px;
+}
+
+/* ================================ */
+/*            backlight             */
+/* ================================ */
+#backlight {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #f6c657;
+  padding-right: 4px;
+  border: 2px solid #f6c657;
+  border-radius: 3px;
+}
+
+/* ================================ */
+/*            memory                */
+/* ================================ */
+#memory {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #89b482;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #89b482;
+  border-radius: 10px;
+}
+
+/* ================================ */
+/*         pulseaudio               */
+/* ================================ */
+#pulseaudio {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #e78a4e;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #e78a4e;
+  border-radius: 10px;
+}
+
+#pulseaudio.muted {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #e78a4e;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #e78a4e;
+  border-radius: 10px;
+}
+
+/* ================================ */
+/*            battery               */
+/* ================================ */
+#battery {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #689d6a;
+  padding-right: 4px;
+  border: 2px solid #689d6a;
+  border-radius: 3px;
+}
+
+#battery.critical {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #cc241d;
+  padding-right: 4px;
+  border: 2px solid #cc241d;
+  border-radius: 3px;
+}
+
+#battery.warning {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #e78a4e;
+  padding-right: 4px;
+  border: 2px solid #e78a4e;
+  border-radius: 3px;
+}
+
+/* ================================ */
+/*            clock                 */
+/* ================================ */
+#clock {
+  font-family: IosevkaTerm Nerd Font Propo;
+  font-size: 16px;
+  font-weight: 800;
+  color: #ea6962;
+  padding-right: 4px;
+  margin: 5px 0px;
+  border: 2px solid #ea6962;
+  border-radius: 10px;
+}

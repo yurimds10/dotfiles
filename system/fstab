@@ -1,0 +1,15 @@
+# This is a generated file.  Do not edit!
+#
+# To make changes, edit the fileSystems and swapDevices NixOS options
+# in your /etc/nixos/configuration.nix file.
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+
+# Filesystems.
+/dev/disk/by-uuid/5ccd20ee-2540-48c7-98d8-d44ef9f8d59b / btrfs x-initrd.mount,subvol=root,compress=zstd 0 0
+/dev/disk/by-uuid/5ccd20ee-2540-48c7-98d8-d44ef9f8d59b /home btrfs subvol=home,compress=zstd 0 0
+/dev/disk/by-uuid/5ccd20ee-2540-48c7-98d8-d44ef9f8d59b /nix btrfs x-initrd.mount,subvol=nix,compress=zstd,noatime 0 0
+
+
+# Swap devices.
+/dev/disk/by-uuid/c9c3a86e-e0aa-4de5-870e-fe5849fe8cf6 none swap defaults
