@@ -20,3 +20,5 @@ set recolor-keephue	"false"
 set recolor-lightcolor	"rgb(41, 40, 40)"
 set statusbar-bg	"rgb(80, 73, 69)"
 set statusbar-fg	"rgb(189, 174, 147)"
+
+set selection-clipboard clipboard

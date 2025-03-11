@@ -12,7 +12,7 @@
 
 /* the whole window */
 window#waybar {
-  background: #292828;
+  background: #1d2021;
   color: #ebdbb2;
   padding: 0px 5px;
   margin: 0;
@@ -27,37 +27,69 @@ window#waybar {
   padding-right: 5px;
 }
 
-#custom-rofi {
-  color: #292828;
-  border: 2px solid #d3869b;
-  background-color: #d3869b;
-  border-radius: 10px;
-  padding: 0 6px;
-  margin: 5px 0px 5px 0px;
+#custom-rofi,
+#workspaces button,
+#workspaces button:hover,
+#workspaces button.visible,
+#workspaces button.visible:hover,
+#workspaces button.active,
+#workspaces button.active:hover,
+#workspaces button.urgent,
+#window,
+#tray,
+#disk,
+#cpu,
+#memory,
+#network,
+#temperature,
+#temperature.critical,
+#backlight,
+#wireplumber,
+#battery,
+#battery.critical,
+#battery.warning,
+#clock {
   font-family: IosevkaTerm Nerd Font Propo;
   font-size: 16px;
-  padding: 0 4px;
-  margin: 5px 3px;
   font-weight: 800;
+  border-radius: 3px;
+}
+
+#window,
+#tray,
+#disk,
+#cpu,
+#memory,
+#wireplumber,
+#network,
+#temperature,
+#temperature.critical,
+#backlight,
+#pulseaudio,
+#pulseaudio.muted,
+#battery,
+#battery.critical,
+#battery.warning,
+#clock {
+  padding-right: 4px;
+}
+
+#custom-rofi {
+  padding: 0 6px;
 }
 
 /* ================================ */
 /*       workspaces module          */
 /* ================================ */
 #workspaces {
-  margin: 0px;
-  margin: 5px 0px;
-  border: 2px solid #ebdbb2;
-  border-radius: 10px;
+  margin: 3px 0px;
+  font-size: 10px;
 }
 
 #workspaces button {
   color: #ebdbb2;
   padding: 0 2px;
   margin: 5px 3px;
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 12px;
-  font-weight: 800;
 }
 
 #workspaces button:hover {
@@ -66,225 +98,115 @@ window#waybar {
 
 #workspaces button.visible {
   color: #292828;
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 12px;
-  font-weight: 800;
 }
 
 #workspaces button.visible:hover {
   color: #292828;
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 12px;
-  font-weight: 800;
 }
 
 #workspaces button.active {
-  color: #a5a64e;
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 12px;
-  font-weight: 800;
+  color: #d3869b;
 }
 
 #workspaces button.active:hover {
   color: #d3869b;
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 12px;
-  font-weight: 800;
 }
 
 #workspaces button.urgent {
   color: #ea6962;
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 12px;
-  font-weight: 800;
 }
 
 /* ================================ */
 /*            window                */
 /* ================================ */
 #window {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
-  color: #a9b665;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #a9b665;
-  border-radius: 10px;
+  color: #d3869b;
 }
 
-/* ================================ */
-/*            tray                  */
-/* ================================ */
-#tray {
-  margin: 5px 0px;
-  padding: 0 6px;
-  border: 2px solid #ebdbb2;
-  border-radius: 10px;
+#backlight {
+  color: #f6c657;
 }
 
 /* ================================ */
 /*            disk                  */
 /* ================================ */
 #disk {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #d8a657;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #d8a657;
-  border-radius: 10px;
 }
 
 /* ================================ */
 /*            cpu                  */
 /* ================================ */
 #cpu {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #a9b665;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #a9b665;
-  border-radius: 10px;
 }
 
 /* ================================ */
 /*             network              */
 /* ================================ */
 #network {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #7daea3;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #7daea3;
-  border-radius: 10px;
 }
 
 /* ================================ */
 /*            temp                  */
 /* ================================ */
 #temperature {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #d8a657;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #d8a657;
-  border-radius: 3px;
 }
 
 #temperature.critical {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #cc241d;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #cc241d;
-  border-radius: 3px;
 }
 
 /* ================================ */
 /*            backlight             */
 /* ================================ */
 #backlight {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #f6c657;
-  padding-right: 4px;
-  border: 2px solid #f6c657;
-  border-radius: 3px;
 }
 
 /* ================================ */
 /*            memory                */
 /* ================================ */
 #memory {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #89b482;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #89b482;
-  border-radius: 10px;
 }
 
 /* ================================ */
 /*         pulseaudio               */
 /* ================================ */
-#pulseaudio {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
+#wireplumber {
   color: #e78a4e;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #e78a4e;
-  border-radius: 10px;
 }
 
 #pulseaudio.muted {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #e78a4e;
-  padding-right: 4px;
-  margin: 5px 0px;
-  border: 2px solid #e78a4e;
-  border-radius: 10px;
 }
 
 /* ================================ */
 /*            battery               */
 /* ================================ */
 #battery {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #689d6a;
-  padding-right: 4px;
-  border: 2px solid #689d6a;
-  border-radius: 3px;
 }
 
 #battery.critical {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #cc241d;
-  padding-right: 4px;
-  border: 2px solid #cc241d;
-  border-radius: 3px;
 }
 
 #battery.warning {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #e78a4e;
-  padding-right: 4px;
-  border: 2px solid #e78a4e;
-  border-radius: 3px;
 }
 
 /* ================================ */
 /*            clock                 */
 /* ================================ */
 #clock {
-  font-family: IosevkaTerm Nerd Font Propo;
-  font-size: 16px;
-  font-weight: 800;
   color: #ea6962;
-  padding-right: 4px;
   margin: 5px 0px;
-  border: 2px solid #ea6962;
-  border-radius: 10px;
+}
+
+#tray {
+  padding: 0 6px 0 6px;
 }

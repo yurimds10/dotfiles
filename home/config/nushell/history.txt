@@ -1,0 +1,115 @@
+clear
+dbus-run-session awesome
+emerge sway
+doas emerge sway
+clear
+doas emerge hyprland
+clear
+dbus-run-session Hyprland
+exit
+clear
+Hyprland 
+dbus-launch Hyprland
+clear
+dbus-run-session Hyprland
+cd .config
+ls
+..
+git clone https://github.com/yurimds10/dotfiles
+cd do
+cd dotfiles/
+cd home/config/
+ln -s hypr/ ~/.config/hypr
+dbus-run-session Hyprland
+ls ~/.config/hypr
+ls ~/.config/
+rm -rf ~/.config/hypr
+cp -r hypr/ ~/.config/
+dbus-run-session Hyprland
+clear
+exit
+mkdir -p /etc/modules-load.d
+mkdir /etc/modules-load.d
+doas mkdir /etc/modules-load.d
+cd /etc/modules-load.d/
+nvim video.conf
+doas nvim video.conf
+clear
+reboot
+dbus-run-session Hyprland
+exit
+doas rc-update add seatd default 
+doas rc-update add seat default 
+nvim .xinitrc
+clear
+startx
+clear
+doas emerge xinit
+startx
+doas emerge xorg
+doas emerge -s xorg
+doas emerge xorg-server
+startx
+doas startx
+clear
+startx .xinitrc
+doas startx ./.xinitrc
+dbus-run-session Hyprland
+clear
+startx .xinitrc
+startx ./.xinitrc
+doas startx ./.xinitrc
+exit
+doas startx ./.xinitrc
+clear
+fastfetch 
+ls
+clear
+doas Hyprland
+Hyprland
+clear
+dbus-run-session Hyprland
+doas startx ./.xinitrc
+dbus-run-session Hyprland
+clear
+doas nvim /etc/portage/make.conf
+clear
+doas emerge --ask --verbose --update --deep --changed-use @world
+doas nvim /etc/portage/package.use
+clear
+doas emerge --ask --verbose --update --deep --changed-use @world
+USE="-reference" doas emerge --ask --verbose --update --deep --changed-use @world
+doas nvim /etc/portage/package.use
+doas emerge --ask --verbose --update --deep --changed-use @world
+doas nvim /etc/portage/package.use
+clear
+doas emerge --ask --verbose --update --deep --changed-use @world
+doas nvim /etc/portage/package.use
+clear
+doas emerge --ask --verbose --update --deep --changed-use @world
+clear
+dbus-run-session Hyprland
+reboot
+doas emerge @preserved-rebuild
+doas emerge --depclean
+doas reboot
+clear
+dbus-run-session Hyprland
+cd .config/hypr/
+nvim hyprland.conf
+clear
+..
+rm -rf ~/.config/hypr
+doas rm -rf ~/.config/hypr
+mkdir hypr
+nvim hypr
+exit
+clear
+exit
+clear
+ls /boot/
+exit
+clear
+fastfetch 
+ls
+exit

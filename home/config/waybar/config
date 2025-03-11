@@ -1,27 +1,60 @@
 [
   {
+    "modules-left": [
+      "custom/rofi",
+      "custom/launcher",
+      "hyprland/workspaces",
+    ],
+
+    "modules-center": [
+      "clock"
+    ],
+
+    "modules-right": [
+      "tray",
+      "wireplumber",
+      "disk",
+      "cpu",
+      "memory",
+      "network"
+    ],
+
+    "custom/rofi": {
+	    "format": "<span color='#282828' bgcolor='#d3869b'>  </span>",
+    	"on-click": "rofi -show drun -show-icons",
+      "on-click-right": "~/.config/custom_scripts/power.sh",
+      "escape" : true,
+      "tooltip" : false
+	  },
+
     "clock": {
-      "format": "<span color='#292828' bgcolor='#ea6962' >  </span> {:%H:%M:%S %A %d.%m.%y}",
+      "format": "<span color='#292828' bgcolor='#ea6962' >  </span> {:%a %d %b %H:%M}",
       "interval": 1,
       "timezone": "America/Sao_Paulo",
       "tooltip": false
     },
+
     "cpu": {
       "format": "<span color='#292828' bgcolor='#a9b665' >  </span> {usage}%",
       "interval": 2,
       "tooltip": false
     },
+
     "disk": {
       "format": "<span color='#292828' bgcolor='#d8a657' >  </span> {free}",
       "interval": 20
     },
+
     "gtk-layer-shell": true,
+
     "height": 20,
+
     "hyprland/window": {
-      "format": "<span color='#292828' bgcolor='#a9b665' > 󰻈 </span> {class}",
+      "format": "<span color='#292828' bgcolor='#d3869b' > 󰻈 </span> {class}",
       "icon": false,
       "separate-outputs": true
     },
+
     "hyprland/workspaces": {
       "active-only": false,
       "all-outputs": true,
@@ -32,35 +65,23 @@
         "focused": "",
         "urgent": ""
       },
+
       "persistent-workspaces": {
         "*": 5
       },
+
       "warp-on-scroll": false
     },
+
     "layer": "top",
     "margin-left": 8,
     "margin-right": 8,
-    "margin-top": 10,
+    "margin-top": 5,
     "memory": {
       "format": "<span color='#292828' bgcolor='#89b482' >  </span> {used:0.1f}GB",
       "interval": 2
     },
-    "modules-center": [
-      "clock"
-    ],
-    "modules-left": [
-      "custom/launcher",
-      "hyprland/workspaces",
-      "hyprland/window"
-    ],
-    "modules-right": [
-      "tray",
-      "pulseaudio",
-      "disk",
-      "cpu",
-      "memory",
-      "network"
-    ],
+
     "network": {
       "format-disconnected": "<span color='292828' bgcolor='#7daea3'>  </span> Disconnected",
       "format-ethernet": "<span color='#292828' bgcolor='#7daea3'> 󱘖 </span> Wired",
@@ -70,10 +91,9 @@
       "max-length": 30,
       "tooltip-format": "󱘖 {ipaddr}  {bandwidthUpBytes}  {bandwidthDownBytes}"
     },
-    "pulseaudio": {
+
+    "wireplumber": {
       "format": "<span color='#292828' bgcolor='#e78a4e'>  </span> {volume}%",
-      "format-bluetooth": "<span color='#292828' bgcolor='#e78a4e'> 󰂰 </span> {volume}%",
-      "format-bluetooth-muted": "<span color='#292828' bgcolor='#e78a4e'> 󰂲 </span> {volume}%",
       "format-muted": "<span color='#292828' bgcolor='#e78a4e'>  </span> {volume}%",
       "format-source": "{volume}% ",
       "max-volume": 130,

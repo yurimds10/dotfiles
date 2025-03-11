@@ -9,7 +9,7 @@
     "padding": {
       "right": 1
     },
-    "source": "nixos_small"
+    "source": "gentoo_small"
   },
   "modules": [
     {
@@ -18,50 +18,60 @@
     },
     {
       "format": "{1}",
-      "key": "│           │u001b[11Du001b[31m user",
+      "key": "│  user    │",
+      "keyColor": "white",
       "type": "title"
     },
     {
       "format": "{2}",
-      "key": "│           │u001b[11Du001b[32m󰇅 hname",
+      "key": "│ 󰇅 hname   │",
+      "keyColor": "cyan",
       "type": "title"
     },
     {
-      "key": "│           │u001b[11Du001b[33m󰅐 uptime",
+      "key": "│ 󰅐 uptime  │",
+      "keyColor": "magenta",
       "type": "uptime"
     },
     {
-      "key": "│           │u001b[11Du001b[35m kernel",
+      "key": "│  kernel  │",
+      "keyColor": "blue",
       "type": "kernel"
     },
     {
-      "key": "│           │u001b[11Du001b[36m󰇄 wm",
+      "key": "│ 󰇄  wm     │",
+      "keyColor": "yellow",
       "type": "wm"
     },
     {
-      "key": "│           │u001b[11Du001b[31m term",
+      "key": "│  term    │",
+      "keyColor": "green",
       "type": "terminal"
     },
     {
-      "key": "│           │u001b[11Du001b[32m shell",
+      "key": "│   shell  │",
+      "keyColor": "red",
       "type": "shell"
     },
     {
-      "key": "│           │u001b[11Du001b[33m󰍛 cpu",
+      "key": "│ 󰍛 cpu     │",
+      "keyColor": "cyan",
       "type": "cpu"
     },
     {
       "folders": "/",
-      "key": "│           │u001b[11Du001b[34m󰉉 disk",
+      "key": "│ 󰉉 disk    │",
+      "keyColor": "magenta",
       "type": "disk"
     },
     {
-      "key": "│           │u001b[11Du001b[35m memory",
+      "key": "│   memory │",
+      "keyColor": "blue",
       "type": "memory"
     },
     {
-      "key": "  󱦟 OS Age ",
-      "keyColor": "red",
+      "key": "│ 󱦟 OS Age  │",
+      "keyColor": "yellow",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
       "type": "command"
     },
@@ -70,7 +80,7 @@
       "type": "custom"
     },
     {
-      "key": "│           │u001b[11Du001b[m colors",
+      "key": "│  colors  │",
       "symbol": "circle",
       "type": "colors"
     },
