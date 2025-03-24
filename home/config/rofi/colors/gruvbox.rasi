@@ -12,5 +12,5 @@
     foreground:     #EBDBB2FF;
     selected:       #D3869BFF;
     active:         #B8BB26FF;
-    urgent:         #FB4934FF;
+    urgent:         #EA4934FF;
 }
