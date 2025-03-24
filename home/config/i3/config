@@ -1,0 +1,93 @@
+set $term kitty
+
+set $mod Mod4
+set $ALT Mod1
+
+bindsym $mod+Return exec $term
+bindsym $mod+d exec ~/.config/rofi/launcher/launcher.sh
+bindsym $mod+F12 exec ~/.config/rofi/powermenu/powermenu.sh
+
+bindsym $mod+q kill
+
+input * {
+  xkb_layout br
+}
+
+# Change the focused window
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+...
+# Move the focused window
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# switch to workspace
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# move focused container to workspace
+bindsym $mod+Shift+exclam move container to workspace 1
+bindsym $mod+Shift+at move container to workspace 2
+bindsym $mod+Shift+numbersign move container to workspace 3
+bindsym $mod+Shift+dollar move container to workspace 4
+bindsym $mod+Shift+percent move container to workspace 5
+bindsym $mod+Shift+asciicircum move container to workspace 6
+bindsym $mod+Shift+ampersand move container to workspace 7
+bindsym $mod+Shift+asterisk move container to workspace 8
+bindsym $mod+Shift+parenleft move container to workspace 9
+bindsym $mod+Shift+parenright move container to workspace 10
+...
+# View management
+bindsym $mod+h split h
+bindsym $mod+v split v
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# resize window (you can also use the mouse for that)
+mode "resize" {
+  # These bindings trigger as soon as you enter the resize mode
+
+  # They resize the border in the direction you pressed, e.g.
+  # when pressing left, the window is resized so that it has
+  # more space on its left
+
+  bindsym j resize shrink left 10 px or 10 ppt
+  bindsym Shift+J resize grow   left 10 px or 10 ppt
+
+  bindsym k resize shrink down 10 px or 10 ppt
+  bindsym Shift+K resize grow   down 10 px or 10 ppt
+
+  bindsym l resize shrink up 10 px or 10 ppt
+  bindsym Shift+L resize grow   up 10 px or 10 ppt
+
+  bindsym semicolon resize shrink right 10 px or 10 ppt
+  bindsym Shift+colon resize grow   right 10 px or 10 ppt
+
+  # same bindings, but for the arrow keys
+  bindsym Left resize shrink left 10 px or 10 ppt
+  bindsym Shift+Left resize grow   left 10 px or 10 ppt
+
+  bindsym Down resize shrink down 10 px or 10 ppt
+  bindsym Shift+Down resize grow   down 10 px or 10 ppt
+
+  bindsym Up resize shrink up 10 px or 10 ppt
+  bindsym Shift+Up resize grow   up 10 px or 10 ppt
+
+  bindsym Right resize shrink right 10 px or 10 ppt
+  bindsym Shift+Right resize grow   right 10 px or 10 ppt
+
+  # back to normal: Enter or Escape
+  bindsym Return mode "default"
+  bindsym Escape mode "default"
+}
+
+bindsym $mod+r mode "resize"

@@ -113,3 +113,280 @@ clear
 fastfetch 
 ls
 exit
+clear
+ls
+ls -la
+clear
+which nu
+doas nvim /etc/shells
+exit
+clear
+ls
+clear
+fastfetch 
+ls
+clear
+cd /usr/src/linux-6.12.16-gentoo/
+ls
+nvim .
+clear
+ls
+ls .config
+cd .config
+ls
+cd gtk-4.0/
+ls
+..
+ls
+~
+clear
+cd .config
+rm -rf gtk-4.0/
+~
+cd .local/share/themes/Gruvbox-Dark/
+mkdir gtk-4.0
+cd gtk-4.0/
+ls
+clear
+nvim .
+~
+cd Build/
+git clone https://github.com/Fausto-Korpsvart/Gruvbox-GTK-Theme.git
+cd Gruvbox-GTK-Theme/
+ls
+ls -la
+nvim .
+clear
+doas emerge sassc
+doas emerge dev-lang/sassc
+clear
+ls
+cd themes/
+ls
+./install.sh
+./install.sh -t all
+clear
+~
+cd Build/
+rm -rf *
+rm -rf ./*
+ls
+..
+sl
+ls
+clear
+ls
+clear
+java -jar ~/Downloads/SKlauncher-3.2.12.jar
+clear
+doas nvim /etc/portage/make.conf
+clear
+config nu
+clear
+nvim dotfiles
+config nu
+exit
+config nu
+exit
+sh /home/musashi/.config/hypr/start.sh
+nvim dotfiles
+nvim .config/nvim
+clear
+exit
+clear
+fastfetch 
+clear
+eselect kernel list
+cd /usr/src/linux/
+make dmenuconfig
+nvim .
+clear
+make kmenuconfig
+doas emerge usbutils
+clear
+make nconfig
+clear
+doas emerge kmod
+make nconfig
+nvim .config
+clear
+exit
+make -j4
+ls /boot
+clear
+nvim /etc/portage/make.conf
+clear
+make modules_install
+eselect kernel list
+..
+cd linux/
+make modules_install
+make install
+emerge gentoo-sources
+exit
+doas su
+clear
+doas emerge @module-rebuild
+exit
+fastfetch 
+clear
+exit
+cd /usr/src/linux/
+nvim .config
+clear
+make -j4
+make modules_install
+make install
+ls /boot
+exit
+doas su
+exit
+clear
+sh /home/musashi/.config/hypr/start.sh
+clear
+sh /home/musashi/.config/hypr/start.sh
+fastfetch 
+nvim .config/fastfetch/
+clear
+fastfetch 
+clear
+fastfetch 
+exit
+nvim .config/fastfetch/config.jsonc
+exit
+doas emerge gotop
+doas nvim /etc/portage/package.accept_keywords
+clear
+doas emerge gotop
+cd /usr/src/linux/
+doas nvim /etc/default/grub
+clear
+cd /usr/src/linux/
+doas nvim .config
+clear
+make -j4
+clear
+make -j4
+cd /usr/src/linux/
+doas nvim .config
+exit
+Y
+make modules_install
+clear
+make install
+clear
+exit
+doas su
+doas emerge @module-rebuild
+cd /boot/
+ls
+clear
+ls
+rm -rf System.map-6.12.16-gentoo-gentoo-dist System.map-6.12.16-gentoo-gentoo config-6.12.16-gentoo-gentoo-dist config-6.12.16-gentoo-gentoo initramfs-6.12.16-gentoo-gentoo-dist.img initramfs-6.12.16-gentoo-gentoo.img vmlinuz-6.12.16-gentoo-gentoo-dist vm
+ls
+clear
+rm -rf vmlinuz-6.12.16-gentoo-gentoo
+ls
+clear
+exit
+doas su
+doas grub-mkconfig -o /boot/grub/grub.cfg
+clear
+reboot
+exit
+clear
+fastfetch 
+clear
+exit
+java -jar ~/Downloads/SKlauncher-3.2.12.jar
+fish
+gotop
+fastfetch 
+doas emerge docker
+doas emerge app-containers/docker
+exit
+fastfetch 
+clear
+exit
+steam
+fish
+ls
+clear
+fish
+node --version
+clear
+emerge -s angular
+npm install -g @angular/cli
+doas npm install -g @angular/cli
+clear
+cd Documents/Projects/Repos/
+ls
+git clone git@github.com:yurimds10/FlashcardsApp.git
+cd FlashcardsApp/
+nvim .
+exit
+java -jar ~/Downloads/SKlauncher-3.2.12.jar
+exit
+sh /home/musashi/.config/hypr/start.sh
+clear
+fastfetch 
+gotop
+fastfetch 
+exit
+clear
+fastfetch 
+fish
+clear
+ls
+doas emerge -s i3
+doas emerge x11-wm/i3
+clear
+nvim .xinitrc
+clear
+xinit ./.xinitrc
+doas emerge xorg-server
+xinit ./.xinitrc
+clear
+nvim .config/
+clear
+xinit ./.xinitrc
+fastfetch 
+clear
+gotop
+clear
+nvim .config/i3
+nvim .xinitrc
+nvim .config/i3
+exit
+doas emerge --depclean rofi-wayland
+doas emerge rofi
+clear
+exit
+loginctl reboot
+doas emerge alacritty
+ls
+clear
+fastfetch 
+gotop
+clear
+doas emerge polybar
+doas nvim /etc/portage/package.use
+clear
+doas emerge polybar
+fastfetch 
+doas emerge sway
+clear
+ls
+clear
+chsh -s /bin/fish
+exit
+ls
+doas emerge --depclean awesome
+cd dotfiles/home/config/
+ls
+mkdir i3 sway
+ls
+fish
+exit
+ln -s ~/dotfiles/home/config/fish/ ~/.config/fish
+exit

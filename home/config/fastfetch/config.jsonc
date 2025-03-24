@@ -39,7 +39,7 @@
       "type": "kernel"
     },
     {
-      "key": "│ 󰇄  wm     │",
+      "key": "│ 󰇄 wm      │",
       "keyColor": "yellow",
       "type": "wm"
     },
@@ -49,7 +49,7 @@
       "type": "terminal"
     },
     {
-      "key": "│   shell  │",
+      "key": "│  shell   │",
       "keyColor": "red",
       "type": "shell"
     },
@@ -65,12 +65,12 @@
       "type": "disk"
     },
     {
-      "key": "│   memory │",
+      "key": "│  memory  │",
       "keyColor": "blue",
       "type": "memory"
     },
     {
-      "key": "│ 󱦟 OS Age  │",
+      "key": "│ 󱦟 os age  │",
       "keyColor": "yellow",
       "text": "birth_install=$(stat -c %W /); current=$(date +%s); time_progression=$((current - birth_install)); days_difference=$((time_progression / 86400)); echo $days_difference days",
       "type": "command"
