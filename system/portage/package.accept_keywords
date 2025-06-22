@@ -1,0 +1,70 @@
+app-emulation/wine-staging ~amd64
+app-emulation/wine-proton ~amd64
+
+gnome-extra/gnome-software
+
+app-misc/anki ~amd64
+app-misc/nwg-look ~amd64
+app-misc/tealdeer
+app-misc/yazi
+
+app-office/obsidian
+
+dev-cpp/sdbus-c++
+
+dev-python/pypresence
+dev-python/moddb
+
+app-shells/zoxide
+
+dev-util/android-studio
+dev-util/idea-community
+dev-util/insomnia-bin
+dev-util/tokei
+
+games-emulation/pcsx2 **
+
+games-util/game-device-udev-rules ~amd64
+games-util/gamemode ~amd64
+games-util/mangohud ~amd64
+games-util/lutris
+games-util/protonup
+
+gui-apps/aylurs-gtk-shell ~amd64
+gui-apps/swaync ~amd64
+gui-apps/swww ~amd64
+gui-apps/rofi-wayland ~amd64
+
+gui-libs/kddockwidgets ~amd64
+gui-libs/xdg-desktop-portal-hyprland
+
+gui-wm/gamescope ~amd64
+
+media-gfx/vkBasalt ~amd64
+
+media-libs/imgui ~amd64
+media-libs/implot ~amd64
+media-libs/nvidia-vaapi-driver ~amd64
+media-libs/libsdl3 ~amd64
+media-libs/vkroots ~amd64
+
+media-sound/musikcube
+
+media-video/gpu-screen-recorder **
+media-video/gpu-screen-recorder-gtk **
+
+net-im/vesktop-bin
+
+net-misc/gnome-ssh-askpass ~amd64
+
+net-wireless/bluez-tools ~amd64
+
+x11-apps/xcur2png ~amd64
+
+x11-drivers/nvidia-drivers ~amd64
+
+sys-apps/mission-center
+sys-apps/sd
+
+*/*::steam-overlay
+
