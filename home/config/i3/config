@@ -1,93 +1,30 @@
+include ~/.config/i3/autostart.conf
+include ~/.config/i3/keybindings.conf
+
 set $term kitty
 
-set $mod Mod4
-set $ALT Mod1
+# Font for window titles. Will also be used by the bar unless a different font
+# is used in the bar {} block below.
+font pango: JetBrainsMono Nerd Font Mono Bold 10
 
-bindsym $mod+Return exec $term
-bindsym $mod+d exec ~/.config/rofi/launcher/launcher.sh
-bindsym $mod+F12 exec ~/.config/rofi/powermenu/powermenu.sh
+# Use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
 
-bindsym $mod+q kill
+# move tiling windows via drag & drop by left-clicking into the title bar,
+# or left-clicking anywhere into the window while holding the floating modifier.
+tiling_drag modifier titlebar
 
-input * {
-  xkb_layout br
-}
+# Set a default border color (fallback color)
+for_window [class=".*"] border pixel 1.75
+gaps outer 2
+gaps inner 5
+for_window [class=".*"] border #7f9e65
 
-# Change the focused window
-bindsym $mod+Left focus left
-bindsym $mod+Down focus down
-...
-# Move the focused window
-bindsym $mod+Shift+Up move up
-bindsym $mod+Shift+Right move right
+hide_edge_borders both
 
-# switch to workspace
-bindsym $mod+1 workspace 1
-bindsym $mod+2 workspace 2
-bindsym $mod+3 workspace 3
-bindsym $mod+4 workspace 4
-bindsym $mod+5 workspace 5
-bindsym $mod+6 workspace 6
-bindsym $mod+7 workspace 7
-bindsym $mod+8 workspace 8
-bindsym $mod+9 workspace 9
-bindsym $mod+0 workspace 10
-
-# move focused container to workspace
-bindsym $mod+Shift+exclam move container to workspace 1
-bindsym $mod+Shift+at move container to workspace 2
-bindsym $mod+Shift+numbersign move container to workspace 3
-bindsym $mod+Shift+dollar move container to workspace 4
-bindsym $mod+Shift+percent move container to workspace 5
-bindsym $mod+Shift+asciicircum move container to workspace 6
-bindsym $mod+Shift+ampersand move container to workspace 7
-bindsym $mod+Shift+asterisk move container to workspace 8
-bindsym $mod+Shift+parenleft move container to workspace 9
-bindsym $mod+Shift+parenright move container to workspace 10
-...
-# View management
-bindsym $mod+h split h
-bindsym $mod+v split v
-bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
-bindsym $mod+e layout toggle split
-
-# resize window (you can also use the mouse for that)
-mode "resize" {
-  # These bindings trigger as soon as you enter the resize mode
-
-  # They resize the border in the direction you pressed, e.g.
-  # when pressing left, the window is resized so that it has
-  # more space on its left
-
-  bindsym j resize shrink left 10 px or 10 ppt
-  bindsym Shift+J resize grow   left 10 px or 10 ppt
-
-  bindsym k resize shrink down 10 px or 10 ppt
-  bindsym Shift+K resize grow   down 10 px or 10 ppt
-
-  bindsym l resize shrink up 10 px or 10 ppt
-  bindsym Shift+L resize grow   up 10 px or 10 ppt
-
-  bindsym semicolon resize shrink right 10 px or 10 ppt
-  bindsym Shift+colon resize grow   right 10 px or 10 ppt
-
-  # same bindings, but for the arrow keys
-  bindsym Left resize shrink left 10 px or 10 ppt
-  bindsym Shift+Left resize grow   left 10 px or 10 ppt
-
-  bindsym Down resize shrink down 10 px or 10 ppt
-  bindsym Shift+Down resize grow   down 10 px or 10 ppt
-
-  bindsym Up resize shrink up 10 px or 10 ppt
-  bindsym Shift+Up resize grow   up 10 px or 10 ppt
-
-  bindsym Right resize shrink right 10 px or 10 ppt
-  bindsym Shift+Right resize grow   right 10 px or 10 ppt
-
-  # back to normal: Enter or Escape
-  bindsym Return mode "default"
-  bindsym Escape mode "default"
-}
-
-bindsym $mod+r mode "resize"
+# Gruvbox Dark border colors
+client.focused          #458588 #458588 #ebdbb2 #458588 #ebdbb2
+client.focused_inactive #3c3836 #3c3836 #a89984 #3c3836 #a89984
+client.unfocused        #3c3836 #3c3836 #a89984 #3c3836 #a89984
+client.urgent           #cc241d #cc241d #ebdbb2 #cc241d #ebdbb2
+client.placeholder      #282828 #282828 #a89984 #282828 #a89984
