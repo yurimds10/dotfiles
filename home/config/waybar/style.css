@@ -1,3 +1,17 @@
+/*:root {
+  --color_background: "";
+  --color_foreground: "";
+
+  --color_red: "";
+  --color_orange: "";
+  --color_yellow: "";
+  --color_green: "";
+  --color_aqua: "";
+  --color_blue: "";
+  --color_magenta: "";
+}
+*/
+
 * {
   /* `otf-font-awesome` is required to be installed for icons */
   padding: 0;
@@ -16,7 +30,7 @@ window#waybar {
   color: #ebdbb2;
   padding: 0px 5px;
   margin: 0;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 .modules-left {
@@ -52,7 +66,7 @@ window#waybar {
   font-family: Iosevka Nerd Font Propo;
   font-size: 16px;
   font-weight: 800;
-  border-radius: 3px;
+  border-radius: 10px;
 }
 
 #window,
@@ -204,7 +218,6 @@ window#waybar {
 /* ================================ */
 #clock {
   color: #ea6962;
-  margin: 5px 0px;
 }
 
 #tray {

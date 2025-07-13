@@ -1,0 +1,8 @@
+# Nvidia
+media-libs/nvidia-vaapi-driver
+media-video/libva-utils
+x11-drivers/nvidia-drivers
+
+# Vulkan
+dev-util/vulkan-tools
+media-libs/vulkan-loader

@@ -18,14 +18,14 @@ alias grep="grep --color=always"
 alias vim="nvim"
 alias vi="nvim"
 
-alias dotfiles="nvim $HOME/dotfiles/";
-alias neovim="nvim $HOME/.config/nvim/";
+alias dotfiles="nvim $HOME/Documents/Projects/Repos/dotfiles/"
+alias neovim="nvim $HOME/.config/nvim/"
 
 alias projects="cd ~/Documents/Projects/Repos/"
 alias studies="cd ~/Documents/Studies/Programming/Repos/"
 
 alias gcl="git clone"
-alias gs="git status"
+#alias gs="git status"
 alias gadd="git add"
 alias gc="git commit -m"
 alias gpull="git pull"

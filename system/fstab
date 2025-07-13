@@ -1,15 +1,21 @@
-# This is a generated file.  Do not edit!
+# /etc/fstab: static file system information.
 #
-# To make changes, edit the fileSystems and swapDevices NixOS options
-# in your /etc/nixos/configuration.nix file.
+# See the manpage fstab(5) for more information.
 #
-# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# NOTE: The root filesystem should have a pass number of either 0 or 1.
+#       All other filesystems should have a pass number of 0 or greater than 1.
+#
+# NOTE: Even though we list ext4 as the type here, it will work with ext2/ext3
+#       filesystems.  This just tells the kernel to use the ext4 driver.
+#
+# NOTE: You can use full paths to devices like /dev/sda3, but it is often
+#       more reliable to use filesystem labels or UUIDs. See your filesystem
+#       documentation for details on setting a label. To obtain the UUID, use
+#       the blkid(8) command.
 
-# Filesystems.
-/dev/disk/by-uuid/5ccd20ee-2540-48c7-98d8-d44ef9f8d59b / btrfs x-initrd.mount,subvol=root,compress=zstd 0 0
-/dev/disk/by-uuid/5ccd20ee-2540-48c7-98d8-d44ef9f8d59b /home btrfs subvol=home,compress=zstd 0 0
-/dev/disk/by-uuid/5ccd20ee-2540-48c7-98d8-d44ef9f8d59b /nix btrfs x-initrd.mount,subvol=nix,compress=zstd,noatime 0 0
+# <fs>          <mountpoint>  <type>  <opts>                      <dump> <pass>
 
-
-# Swap devices.
-/dev/disk/by-uuid/c9c3a86e-e0aa-4de5-870e-fe5849fe8cf6 none swap defaults
+/dev/nvme0n1p1  /efi          vfat    umask=0077,tz=UTC           0       2
+/dev/nvme0n1p2  none          swap    sw                          0       0
+/dev/nvme0n1p3  /             btrfs   subvol=root,compress=zstd:4 0       0
+/dev/nvme0n1p3  /home         btrfs   subvol=home,compress=zstd:4	0       0
